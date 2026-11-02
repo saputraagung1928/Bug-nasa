@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saputra Agung — OSINT & Digital Forensik</title>
+<style>
+:root{--bg:#0e1a2b;--panel:#15253c;--ink:#e8eef7;--mute:#9bb0cc;--line:#2a4060;--accent:#f2b84b;--sat:#7fd1ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6fb;--panel:#fff;--ink:#12213a;--mute:#51647f;--line:#c9d5e6;--accent:#b8730a;--sat:#1b6fa8}}
+:root[data-theme="dark"]{--bg:#0e1a2b;--panel:#15253c;--ink:#e8eef7;--mute:#9bb0cc;--line:#2a4060;--accent:#f2b84b;--sat:#7fd1ff}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,.sans{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:0 20px 60px}
+.hero{text-align:center;padding:32px 0 8px}
+.hero h1{font-size:clamp(2rem,8vw,3.2rem);margin:12px 0 4px;letter-spacing:-.02em}
+.hero p{margin:0 auto;color:var(--mute);max-width:520px}
+svg.orbit{width:min(320px,80vw);height:auto}
+.ring{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 6}
+.earth{fill:var(--sat);opacity:.9}
+.land{fill:var(--bg);opacity:.55}
+.sat{fill:var(--accent)}
+.rot{transform-origin:160px 160px;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.rot{animation:none}}
+section{margin-top:40px}
+h2{font-size:1.4rem;border-bottom:2px solid var(--accent);display:inline-block;padding-bottom:4px;margin:0 0 14px}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line)}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{width:38%;color:var(--mute);font-family:"Trebuchet MS",Arial,sans-serif;font-size:.9rem}
+.skills{display:grid;gap:12px}
+.sk{background:var(--panel);border:1px solid var(--line);padding:14px 16px;border-left:4px solid var(--accent)}
+.sk h3{margin:0 0 4px;font-size:1.05rem}
+.sk p{margin:0;color:var(--mute);font-size:.95rem}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:18px}
+.tl div{margin-bottom:16px}
+.tl b{font-family:"Trebuchet MS",Arial,sans-serif}
+.tl small{display:block;color:var(--mute)}
+.btn{display:inline-block;background:var(--accent);color:#111;padding:10px 18px;font-family:"Trebuchet MS",Arial,sans-serif;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--sat);outline-offset:2px}
+.note{background:var(--panel);border:1px dashed var(--line);padding:12px 14px;color:var(--mute);font-size:.9rem}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:20px}
+a{color:var(--sat)}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<svg class="orbit" viewBox="0 0 320 320" role="img" aria-label="Satelit mengorbit bumi">
+<ellipse class="ring" cx="160" cy="160" rx="140" ry="140"/>
+<circle class="earth" cx="160" cy="160" r="58"/>
+<path class="land" d="M125 140q14-18 32-8t6 22-26 8-12-22zM168 176q14-4 20 8t-8 14-16-6z"/>
+<g class="rot"><circle class="sat" cx="160" cy="20" r="7"/><rect class="sat" x="140" y="17" width="12" height="6"/><rect class="sat" x="168" y="17" width="12" height="6"/></g>
+</svg>
+<h1>Saputra Agung</h1>
+<p class="sans">Analis OSINT &amp; Digital Forensik · Analisis Jaringan · Computer Vision</p>
+</header>
+
+<section id="tentang">
+<h2>Tentang</h2>
+<p>Saya Saputra Agung, praktisi keamanan siber yang berfokus pada penyelidikan berbasis sumber terbuka (OSINT) dan forensik digital. Pekerjaan saya mengubah data publik, jejak lalu lintas jaringan, dan citra menjadi temuan yang dapat diverifikasi dan dipertanggungjawabkan.</p>
+</section>
+
+<section id="biodata">
+<h2>Biodata</h2>
+<table>
+<tr><td>Nama lengkap</td><td>Saputra Agung</td></tr>
+<tr><td>Tempat, tanggal lahir</td><td>[isi data Anda]</td></tr>
+<tr><td>Domisili</td><td>[isi kota, Indonesia]</td></tr>
+<tr><td>Bidang</td><td>OSINT, forensik digital, analisis jaringan</td></tr>
+<tr><td>Email</td><td>[isi email]</td></tr>
+<tr><td>Pendidikan</td><td>[isi pendidikan terakhir]</td></tr>
+</table>
+</section>
+
+<section id="keahlian">
+<h2>Keahlian</h2>
+<div class="skills">
+<div class="sk"><h3>OSINT</h3><p>Pengumpulan dan verifikasi informasi dari sumber publik, pemetaan jejak digital, pelaporan dengan rantai bukti.</p></div>
+<div class="sk"><h3>Forensik digital</h3><p>Akuisisi dan analisis bukti, dokumentasi chain of custody, penyusunan laporan teknis.</p></div>
+<div class="sk"><h3>Wireshark</h3><p>Analisis paket (pcap), pelacakan sesi TCP, DNS, HTTP/TLS, serta deteksi anomali lalu lintas pada jaringan milik sendiri atau yang diotorisasi.</p></div>
+<div class="sk"><h3>OpenCV</h3><p>Pengolahan citra: deteksi tepi, pencocokan fitur, dan pemindaian dokumen untuk analisis visual.</p></div>
+<div class="sk"><h3>Keamanan jaringan telekomunikasi (SS7)</h3><p>Pemahaman konsep sinyal SS7 dan risikonya, untuk edukasi, audit defensif, dan mitigasi oleh operator yang berwenang.</p></div>
+</div>
+</section>
+
+<section id="database">
+<h2>Pusat Database</h2>
+<p>Bagian ini memuat arsip kasus, daftar sumber, dan catatan metodologi. Konten di bawah hanya contoh; ganti dengan data Anda sendiri.</p>
+<table>
+<tr><td>Arsip pcap</td><td>Sampel analisis lalu lintas (anonim)</td></tr>
+<tr><td>Daftar sumber OSINT</td><td>Registri domain, arsip web, peta, media sosial publik</td></tr>
+<tr><td>Catatan metodologi</td><td>Template laporan forensik dan checklist verifikasi</td></tr>
+</table>
+<p class="note">Jangan unggah data pribadi pihak lain atau bukti kasus nyata ke halaman publik.</p>
+</section>
+
+<section id="cv">
+<h2>CV</h2>
+<div class="tl">
+<div><b>Analis OSINT &amp; Forensik Digital</b><small>[Perusahaan / Freelance] · [tahun–sekarang]</small>Investigasi insiden, verifikasi sumber, pelaporan teknis.</div>
+<div><b>Analis Jaringan</b><small>[Instansi] · [tahun–tahun]</small>Pemantauan dan analisis paket dengan Wireshark.</div>
+<div><b>Pendidikan &amp; Sertifikasi</b><small>[isi sertifikasi, mis. CEH, CHFI, GCFA]</small></div>
+</div>
+<p><button class="btn" onclick="window.print()">Cetak / simpan CV sebagai PDF</button></p>
+</section>
+</main>
+<footer>© Saputra Agung · Dibuat untuk tujuan edukasi dan profesional</footer>
+</body>
+</html>
